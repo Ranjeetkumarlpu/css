@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<style>
+*
+{
+box-sizing:border-box;
+font-size:20px;
+}
+.container
+{
+width:100%;
+height:auto;
+background:lightgrey;
+
+}
+.row
+{
+
+margin-top: 30px;
+}
+
+.row:after /* After is a pseudo class, used for apply effect after the class or element */
+{
+display:table;
+/* Div property Display: table means treat every element within this DIV as individual row */
+clear:left;
+content:"";
+/* Content property makes sure whether every elements having content or not. Basically it works for applying backcolor of a DIV which is displayed as table */
+
+}
+.col1
+{
+border:1px solid transparent;
+width:5%;
+float:left;
+}
+.col2
+{
+/*border:1px solid green;*/
+width:95%;
+float:left;
+}
+
+input[type="text"],textarea,select
+{
+width:100%;
+height:70px;
+}
+
+@media only screen and (min-width:100px) and (max-width:500px)
+{
+.col1
+{
+width:100%;
+}
+
+.col2
+{
+width:100%;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<form>
+<div class="row">
+<div class="col1">
+<i class="fa fa-user fa-3x" aria-hidden="true">
+</i>
+</div>
+<div class="col2"><input type="text"></div>
+</div>
+<div class="row">
+<div class="col1">Address</div>
+<div class="col2"><textarea></textarea></div>
+</div>
+<div class="row">
+<div class="col1">Religion</div>
+<div class="col2">
+<select>
+<option></option>
+<option>Hindu</option>
+<option>Muslim</option>
+<option>Chirstan</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col1"></div>
+<div class="col2" style="text-align:right">
+<input type="submit" value="PROCEED">
+</div>
+</div>
+</form>
+</div>
+</body>
+</html>
