@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style >
+		
+		.header
+		{
+			grid-area:header;
+			height: 200px;
+			background: pink;
+		}
+		.left-sidebar
+		{
+			grid-area: leftsidebar;
+			height: 600px;
+			background: blue;
+		}
+		.middle-bar
+		{
+			grid-area: middlebar;
+			height: 600px;
+			background:orange;
+		}
+		.right-sidebar
+		{
+			grid-area: rightsidebar;
+			height: 600px;
+			background: red;
+		}
+		.footer
+		{
+			grid-area: footer;
+			height: 300px;
+			background: purple;
+		}
+
+		#container
+		{
+			display:grid;
+			grid-template-columns: 2fr 6fr 2fr;
+			grid-gap: 10px;
+			background: lightblue;
+			grid-template-areas: 
+			".header header "
+			             "leftsidebar middlebar rightsidebar"
+			"footer footer footer";
+		}
+	</style>
+</head>
+<body>
+	<div id="ww">
+    <div id="container">
+    	<div class="header">
+    		<h1><p align="center">Tilkamanjhi Bhagalpur University</h1></p>
+    		<h3><p align="center">Bhagalpur pin-812005</h3></p>
+    	</div>
+    	<div class="left-sidebar">
+    	</div>
+    	<div class="middle-bar">
+    		<h1><P align="center">WELCOME</h1></P>
+    	</div>
+    	<div class="right-sidebar">
+    	</div>
+    	<div class="footer">
+    	</div>
+    </div>
+</body>
+</html>

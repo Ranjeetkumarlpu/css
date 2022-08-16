@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+#d1
+{
+height:200px;
+width:200px;
+border:2px solid black;
+animation-name: abc;
+animation-duration:5s;
+}
+
+#d2
+{
+height:200px;
+width:200px;
+border:2px solid black;
+animation-name: xyz;
+animation-duration:5s;
+animation-iteration-count: infinite;
+/* animation repeate infine times */
+}
+
+@keyframes abc
+/* Keyframe used for create animation */
+{
+from
+{
+background:green;
+}
+
+to
+{
+background:pink;
+}
+
+
+}
+
+@keyframes xyz
+{
+0%
+{
+background:green;
+transform:rotate(0deg);
+}
+
+50%
+{
+background:pink;
+transform:rotate(180deg);
+}
+
+100%
+{
+background:green;
+transform:rotate(360deg);
+}
+
+}
+
+#d3
+{
+height:400px;
+width:400px;
+background:skyBlue;
+font-size:40px;
+font-weight:bold;
+text-align:center;
+line-height:200px;
+
+transform: rotate(45deg);
+/* transform used for rotate div */
+
+}
+
+#d3 div
+{
+transform: rotate(-45deg);
+border:2px solid black;
+}
+
+#d4
+{
+height:200px;
+width:400px;
+background:orange;
+line-height: 200px;
+text-align: center;
+font-weight:bold;
+font-size:40px;
+border-top-right-radius: 80px;
+
+}
+
+#d4 div
+{
+transform:rotateY(180deg);
+}
+</style>
+</head>
+<body>
+<h1>Animation Effects</h1>
+<div id="d1">
+</div>
+<br>
+<div id="d2">
+</div>
+<h1>Transformation 2d</h1>
+<div id="d3">
+<div>
+WELCOME
+</div>
+</div>
+<br><br><br>
+<h1>Transformation 3d</h1>
+<div id="d4">
+<div>
+WELCOME
+</div>
+</div>
+</body>
+</html>

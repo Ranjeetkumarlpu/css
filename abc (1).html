@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#p1:hover
+		{
+			background:green;
+		}
+
+		.gen:checked+span
+		{
+			color:red;
+			font-weight:bold;
+		}
+
+		.txt:focus
+		{
+			background:yellow;
+		}
+		
+		#table1
+		{
+			border-collapse: collapse;
+		}
+
+		#table1 tr:nth-child(odd)
+		{
+			background:grey;
+		} 
+
+		#table1 tr:nth-child(even)
+		{
+			background:cyan;
+		} 
+
+		#table1 tr:first-child
+		{
+			background:pink;
+		} 
+		div p
+		{
+			border:2px dotted green;
+		}
+
+		a:active
+		{
+			color:green;
+		}
+
+		a:visited
+		{
+			color:red;
+		}
+
+		a:link
+		{
+			color:yellow;
+		}
+	</style>
+</head>
+<body>
+	<p id="p1">My Para</p>
+	Gender: <input type="radio" name="ab" class="gen"><span>MALE</span>
+	<input type="radio" name="ab" class="gen"><span>FEMALE</span>
+	<br>
+	Name:
+	<input type="text" class="txt">
+	<br>
+	Address:
+	<textarea class="txt"></textarea>
+	<br>
+	<table id="table1" width="300px" height="500px" border="2px">
+		<tr>
+			<th>Roll</th>
+			<th>Marks</th>
+		</tr>
+
+		<tr>
+			<td>1</td>
+			<td>56</td>
+		</tr>
+
+		<tr>
+			<td>2</td>
+			<td>77</td>
+		</tr>
+
+		<tr>
+			<td>3</td>
+			<td>99</td>
+		</tr>
+
+		<tr>
+			<td>4</td>
+			<td>52</td>
+		</tr>
+	</table>
+	<p>para</p>
+	<div><p>para under div</p></div>
+	<p>para</p>
+	<p style="background-s">para</p>
+	<a href="http://www.fice.com">CLICK</a>
+</body>
+</html>
